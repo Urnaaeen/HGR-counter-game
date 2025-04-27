@@ -1,0 +1,66 @@
+.pause-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDFDFD; /* Шардуу фон */
+  }
+  
+  .pause-container {
+    background-color: #f9d9f9; /* Цайвар ягаан */
+    padding: 80px;
+    border-radius: 30px;
+    width: 800px;
+    height: 500px;
+  }
+  
+  .pause-header {
+    background-color: #ffffcc;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .pause-header h1 {
+    font-size: 36px;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  .pause-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .pause-button {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+  }
+  
+  .pause-button .icon {
+    width: 76px;
+    height: 76px;
+    background-color: #eab5ea;
+    color: #cc33cc;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pause-button .text {
+    flex-grow: 1;
+    background-color: #e0f7ff;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+  }
+  

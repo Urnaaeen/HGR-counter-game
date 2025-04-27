@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import '../App.css';
 
-const EMOJI_START = '😄';
-const EMOJI_PATH = '🍀';
+const EMOJI_START = '🐸';
+const EMOJI_PATH = '/images/navch.png';
 const EMOJI_END = '🚩';
 const EMOJI_CORRECT = '😊';
 
@@ -23,16 +23,17 @@ function RandomNumbers() {
 
     useEffect(() => {
         const generate = () => {
-            const randomNums = Array.from({ length: 4 }, () => Math.floor(Math.random() * 10) + 1);
+            const randomNums = Array.from({ length: 4 }, () => Math.floor(Math.random() * 5) + 1);
             setNumbers(randomNums);
 
             const rows = 10;
-            const cols = 20;
+            const cols = 10;
             const tempGrid = Array.from({ length: rows }, () =>
                 Array.from({ length: cols }, () => '')
             );
 
             let x = 0, y = 0;
+            
             tempGrid[x][y] = EMOJI_START;
 
             const paths = [];
